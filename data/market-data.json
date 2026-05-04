@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-05-04T08:00:30.339Z",
-  "previous_generated_at": "2026-05-04T07:50:22.981Z",
+  "generated_at": "2026-05-04T08:02:55.305Z",
+  "previous_generated_at": "2026-05-04T08:00:30.339Z",
   "global": {
     "total_market_cap_usd": 2727263247962.6987,
     "total_volume_24h_usd": 85462775066.22992,
@@ -15,7 +15,7 @@
       "id": "billions-network",
       "name": "Billions Network",
       "symbol": "BILL",
-      "market_cap_rank": 404,
+      "market_cap_rank": 399,
       "score": 0
     },
     {
@@ -33,24 +33,24 @@
       "score": 2
     },
     {
-      "id": "megaeth",
-      "name": "MegaETH",
-      "symbol": "MEGA",
-      "market_cap_rank": 233,
-      "score": 3
-    },
-    {
       "id": "pudgy-penguins",
       "name": "Pudgy Penguins",
       "symbol": "PENGU",
       "market_cap_rank": 86,
+      "score": 3
+    },
+    {
+      "id": "megaeth",
+      "name": "MegaETH",
+      "symbol": "MEGA",
+      "market_cap_rank": 237,
       "score": 4
     },
     {
-      "id": "block-street",
-      "name": "Block Street",
-      "symbol": "BSB",
-      "market_cap_rank": 173,
+      "id": "gensyn",
+      "name": "Gensyn",
+      "symbol": "AI",
+      "market_cap_rank": 474,
       "score": 5
     },
     {
@@ -61,72 +61,72 @@
       "score": 6
     },
     {
-      "id": "gensyn",
-      "name": "Gensyn",
-      "symbol": "AI",
-      "market_cap_rank": 478,
+      "id": "block-street",
+      "name": "Block Street",
+      "symbol": "BSB",
+      "market_cap_rank": 174,
       "score": 7
-    },
-    {
-      "id": "aave",
-      "name": "Aave",
-      "symbol": "AAVE",
-      "market_cap_rank": 57,
-      "score": 8
     },
     {
       "id": "bitcoin",
       "name": "Bitcoin",
       "symbol": "BTC",
       "market_cap_rank": 1,
-      "score": 9
-    },
-    {
-      "id": "bio-protocol",
-      "name": "Bio Protocol",
-      "symbol": "BIO",
-      "market_cap_rank": 248,
-      "score": 10
-    },
-    {
-      "id": "collector-crypt",
-      "name": "Collector Crypt",
-      "symbol": "CARDS",
-      "market_cap_rank": 605,
-      "score": 11
+      "score": 8
     },
     {
       "id": "asteroid-shiba",
       "name": "Asteroid Shiba",
       "symbol": "ASTEROID",
       "market_cap_rank": 228,
-      "score": 12
-    },
-    {
-      "id": "dash",
-      "name": "Dash",
-      "symbol": "DASH",
-      "market_cap_rank": 90,
-      "score": 13
+      "score": 9
     },
     {
       "id": "solana",
       "name": "Solana",
       "symbol": "SOL",
       "market_cap_rank": 7,
+      "score": 10
+    },
+    {
+      "id": "bio-protocol",
+      "name": "Bio Protocol",
+      "symbol": "BIO",
+      "market_cap_rank": 248,
+      "score": 11
+    },
+    {
+      "id": "collector-crypt",
+      "name": "Collector Crypt",
+      "symbol": "CARDS",
+      "market_cap_rank": 608,
+      "score": 12
+    },
+    {
+      "id": "aave",
+      "name": "Aave",
+      "symbol": "AAVE",
+      "market_cap_rank": 57,
+      "score": 13
+    },
+    {
+      "id": "monad",
+      "name": "Monad",
+      "symbol": "MON",
+      "market_cap_rank": 127,
       "score": 14
     }
   ],
   "anomalies": [
     {
-      "coin": "USDC",
-      "symbol": "usdc",
-      "price": 0.999863,
+      "coin": "Circle USYC",
+      "symbol": "usyc",
+      "price": 1.12,
       "issues": [
         {
-          "type": "near_ath",
-          "value": -4.19098,
-          "severity": "low"
+          "type": "stablecoin_depeg",
+          "value": 0.1200000000000001,
+          "severity": "high"
         }
       ]
     },
@@ -149,55 +149,7 @@
       "issues": [
         {
           "type": "near_ath",
-          "value": -1.25,
-          "severity": "low"
-        }
-      ]
-    },
-    {
-      "coin": "USD1",
-      "symbol": "usd1",
-      "price": 0.999706,
-      "issues": [
-        {
-          "type": "near_ath",
-          "value": -2.42293,
-          "severity": "low"
-        }
-      ]
-    },
-    {
-      "coin": "Ethena USDe",
-      "symbol": "usde",
-      "price": 0.999187,
-      "issues": [
-        {
-          "type": "near_ath",
-          "value": -3.37582,
-          "severity": "low"
-        }
-      ]
-    },
-    {
-      "coin": "Circle USYC",
-      "symbol": "usyc",
-      "price": 1.12,
-      "issues": [
-        {
-          "type": "near_ath",
-          "value": -0.06254,
-          "severity": "low"
-        }
-      ]
-    },
-    {
-      "coin": "BlackRock USD Institutional Digital Liquidity Fund",
-      "symbol": "buidl",
-      "price": 1,
-      "issues": [
-        {
-          "type": "near_ath",
-          "value": 0,
+          "value": -1.24764,
           "severity": "low"
         }
       ]
@@ -208,16 +160,16 @@
       "id": "bitcoin",
       "symbol": "btc",
       "name": "Bitcoin",
-      "price": 79690,
+      "price": 79677,
       "market_cap": 1595843133759,
-      "volume_24h": 36114416113,
-      "price_change_1h": -0.2882972161490858,
-      "price_change_24h": 1.7094281983663757,
-      "price_change_7d": 2.524088174850619,
+      "volume_24h": 36145270448,
+      "price_change_1h": -0.27524563063180657,
+      "price_change_24h": 1.6601833148096132,
+      "price_change_7d": 2.6063128267275593,
       "high_24h": 80529,
       "low_24h": 78329,
       "ath": 126080,
-      "ath_change_percentage": -36.79401,
+      "ath_change_percentage": -36.8041,
       "sparkline_7d": [
         78271.08132011641,
         78350.69027764065,
@@ -244,22 +196,22 @@
         80296.72362760552,
         80010.78689175253
       ],
-      "last_updated": "2026-05-04T07:59:47.393Z"
+      "last_updated": "2026-05-04T08:01:53.260Z"
     },
     {
       "id": "ethereum",
       "symbol": "eth",
       "name": "Ethereum",
-      "price": 2362.75,
+      "price": 2361.81,
       "market_cap": 285193657960,
-      "volume_24h": 16377412835,
-      "price_change_1h": -0.2661832310857659,
-      "price_change_24h": 2.3347477666908056,
-      "price_change_7d": 1.7663817942432987,
+      "volume_24h": 16450893422,
+      "price_change_1h": -0.37797155324337933,
+      "price_change_24h": 2.267137852447978,
+      "price_change_7d": 1.9190681858611558,
       "high_24h": 2393.2,
       "low_24h": 2307.4,
       "ath": 4946.05,
-      "ath_change_percentage": -52.22954,
+      "ath_change_percentage": -52.24842,
       "sparkline_7d": [
         2304.3810742437936,
         2308.843004661488,
@@ -286,22 +238,22 @@
         2390.0828707339947,
         2375.9148150136084
       ],
-      "last_updated": "2026-05-04T07:59:47.147Z"
+      "last_updated": "2026-05-04T08:01:55.093Z"
     },
     {
       "id": "tether",
       "symbol": "usdt",
       "name": "Tether",
-      "price": 0.999765,
+      "price": 0.999752,
       "market_cap": 189542217597,
-      "volume_24h": 57952682517,
-      "price_change_1h": -0.0015184952415475397,
-      "price_change_24h": -0.007458460653171899,
-      "price_change_7d": -0.03862721734137613,
+      "volume_24h": 57971625167,
+      "price_change_1h": -0.002785295027182233,
+      "price_change_24h": -0.008725185190194844,
+      "price_change_7d": -0.03463135163488063,
       "high_24h": 0.999859,
       "low_24h": 0.999681,
       "ath": 1.32,
-      "ath_change_percentage": -24.43927,
+      "ath_change_percentage": -24.43744,
       "sparkline_7d": [
         0.9998163391833211,
         0.9998393572377329,
@@ -328,7 +280,7 @@
         0.9997419779943676,
         0.9997824200948658
       ],
-      "last_updated": "2026-05-04T07:59:47.141Z"
+      "last_updated": "2026-05-04T08:01:55.254Z"
     },
     {
       "id": "ripple",
@@ -336,14 +288,14 @@
       "name": "XRP",
       "price": 1.41,
       "market_cap": 87154565490,
-      "volume_24h": 1651683748,
-      "price_change_1h": 0.03628165081985441,
-      "price_change_24h": 1.7214552600453312,
-      "price_change_7d": -0.5106053819236246,
+      "volume_24h": 1657638568,
+      "price_change_1h": 0.022141104818782533,
+      "price_change_24h": 1.7070765077200356,
+      "price_change_7d": -0.40614268166329287,
       "high_24h": 1.42,
       "low_24h": 1.38,
       "ath": 3.65,
-      "ath_change_percentage": -61.33371,
+      "ath_change_percentage": -61.33917,
       "sparkline_7d": [
         1.384080961229955,
         1.3867897612176192,
@@ -370,22 +322,22 @@
         1.4153305003393386,
         1.4122458046632123
       ],
-      "last_updated": "2026-05-04T07:59:47.233Z"
+      "last_updated": "2026-05-04T08:01:55.102Z"
     },
     {
       "id": "binancecoin",
       "symbol": "bnb",
       "name": "BNB",
-      "price": 628.45,
+      "price": 628.53,
       "market_cap": 84687828863,
-      "volume_24h": 1284650764,
-      "price_change_1h": -0.07588112989289937,
-      "price_change_24h": 1.8860231639946206,
-      "price_change_7d": 0.1931403567590088,
+      "volume_24h": 1288238833,
+      "price_change_1h": -0.06837447850101658,
+      "price_change_24h": 1.8867911197896214,
+      "price_change_7d": 0.3361648964062643,
       "high_24h": 638.21,
       "low_24h": 615.79,
       "ath": 1369.99,
-      "ath_change_percentage": -54.1277,
+      "ath_change_percentage": -54.12159,
       "sparkline_7d": [
         616.8237359267978,
         616.81343801506,
@@ -412,22 +364,22 @@
         632.9144768283742,
         633.3965741161758
       ],
-      "last_updated": "2026-05-04T07:59:47.157Z"
+      "last_updated": "2026-05-04T08:01:55.144Z"
     },
     {
       "id": "usd-coin",
       "symbol": "usdc",
       "name": "USDC",
-      "price": 0.999863,
+      "price": 0.999829,
       "market_cap": 77233535448,
-      "volume_24h": 10145177684,
-      "price_change_1h": 0.003941902119358084,
-      "price_change_24h": -0.005146394183441524,
-      "price_change_7d": -0.0005311298117185178,
+      "volume_24h": 10147650370,
+      "price_change_1h": 0.0005331357396143305,
+      "price_change_24h": -0.008554850776607899,
+      "price_change_7d": -0.001751711432636934,
       "high_24h": 1,
       "low_24h": 0.999676,
       "ath": 1.043,
-      "ath_change_percentage": -4.19098,
+      "ath_change_percentage": -4.18026,
       "sparkline_7d": [
         0.999948678344418,
         0.9999149024049283,
@@ -454,22 +406,22 @@
         0.999776307485349,
         0.9997591409117867
       ],
-      "last_updated": "2026-05-04T07:59:47.684Z"
+      "last_updated": "2026-05-04T08:01:53.219Z"
     },
     {
       "id": "solana",
       "symbol": "sol",
       "name": "Solana",
-      "price": 84.88,
-      "market_cap": 48914720201,
-      "volume_24h": 3041855568,
-      "price_change_1h": -0.007031385850344387,
-      "price_change_24h": 1.2097248389703035,
-      "price_change_7d": -1.2551781273572131,
+      "price": 84.81,
+      "market_cap": 48898258297,
+      "volume_24h": 3084995028,
+      "price_change_1h": -0.09082757982991153,
+      "price_change_24h": 1.124908977887599,
+      "price_change_7d": -0.6712460954701261,
       "high_24h": 85.81,
       "low_24h": 83.38,
       "ath": 293.31,
-      "ath_change_percentage": -71.06172,
+      "ath_change_percentage": -71.08597,
       "sparkline_7d": [
         83.74279389931172,
         83.8648169980565,
@@ -496,22 +448,22 @@
         85.73803396306766,
         85.36513953852597
       ],
-      "last_updated": "2026-05-04T07:59:46.629Z"
+      "last_updated": "2026-05-04T08:01:55.086Z"
     },
     {
       "id": "tron",
       "symbol": "trx",
       "name": "TRON",
-      "price": 0.339175,
+      "price": 0.339064,
       "market_cap": 32139502324,
-      "volume_24h": 515281769,
-      "price_change_1h": -0.21120493095194967,
-      "price_change_24h": 0.5182651324524874,
-      "price_change_7d": 4.780863513357071,
+      "volume_24h": 509108462,
+      "price_change_1h": -0.30735854583660255,
+      "price_change_24h": 0.27565899373449304,
+      "price_change_7d": 4.827702900428112,
       "high_24h": 0.340258,
       "low_24h": 0.336143,
       "ath": 0.431288,
-      "ath_change_percentage": -21.35762,
+      "ath_change_percentage": -21.38352,
       "sparkline_7d": [
         0.33697773316766066,
         0.3374266613426226,
@@ -538,7 +490,7 @@
         0.33782034752216394,
         0.33919637857573826
       ],
-      "last_updated": "2026-05-04T07:59:40.988Z"
+      "last_updated": "2026-05-04T08:01:50.578Z"
     },
     {
       "id": "figure-heloc",
@@ -586,16 +538,16 @@
       "id": "dogecoin",
       "symbol": "doge",
       "name": "Dogecoin",
-      "price": 0.112187,
+      "price": 0.112253,
       "market_cap": 17304543015,
-      "volume_24h": 1742536719,
-      "price_change_1h": 0.07724139412966816,
-      "price_change_24h": 3.997300706652312,
-      "price_change_7d": 13.995225485158288,
+      "volume_24h": 1741160374,
+      "price_change_1h": 0.12982917913560268,
+      "price_change_24h": 3.9953741978281094,
+      "price_change_7d": 14.563747632718266,
       "high_24h": 0.113484,
       "low_24h": 0.107617,
       "ath": 0.731578,
-      "ath_change_percentage": -84.66514,
+      "ath_change_percentage": -84.65599,
       "sparkline_7d": [
         0.10783559286198224,
         0.10793507884490268,
@@ -622,22 +574,22 @@
         0.11322192817886469,
         0.11251686737108386
       ],
-      "last_updated": "2026-05-04T07:59:43.557Z"
+      "last_updated": "2026-05-04T08:01:47.660Z"
     },
     {
       "id": "whitebit",
       "symbol": "wbt",
       "name": "WhiteBIT Coin",
       "price": 59.38,
-      "market_cap": 12692121603,
-      "volume_24h": 93665807,
-      "price_change_1h": -0.2648825461638798,
-      "price_change_24h": 1.508592196733886,
-      "price_change_7d": 8.059583842104491,
+      "market_cap": 12672803590,
+      "volume_24h": 93773465,
+      "price_change_1h": -0.21247141344458695,
+      "price_change_24h": 1.5056900541755902,
+      "price_change_7d": 8.191313423163082,
       "high_24h": 60.06,
       "low_24h": 58.46,
       "ath": 64.11,
-      "ath_change_percentage": -7.32154,
+      "ath_change_percentage": -7.37164,
       "sparkline_7d": [
         58.390103048914796,
         58.497973919347025,
@@ -664,22 +616,22 @@
         60.02072555931685,
         59.68134936306161
       ],
-      "last_updated": "2026-05-04T07:59:45.809Z"
+      "last_updated": "2026-05-04T08:01:45.556Z"
     },
     {
       "id": "usds",
       "symbol": "usds",
       "name": "USDS",
-      "price": 0.99989,
+      "price": 0.999859,
       "market_cap": 11471342474,
-      "volume_24h": 25534747,
-      "price_change_1h": 0.004540245812983583,
-      "price_change_24h": 0.011418612201439205,
-      "price_change_7d": 0.014457751521870692,
+      "volume_24h": 25523485,
+      "price_change_1h": -0.006548599060720701,
+      "price_change_24h": -0.001256526488795149,
+      "price_change_7d": 0.01794849984055393,
       "high_24h": 0.999959,
       "low_24h": 0.999585,
       "ath": 1.15,
-      "ath_change_percentage": -13.21724,
+      "ath_change_percentage": -13.21254,
       "sparkline_7d": [
         0.9997984892291942,
         0.9997965905523621,
@@ -706,7 +658,7 @@
         0.9997294485368208,
         0.9998327104466764
       ],
-      "last_updated": "2026-05-04T07:59:43.139Z"
+      "last_updated": "2026-05-04T08:01:46.966Z"
     },
     {
       "id": "hyperliquid",
@@ -714,14 +666,14 @@
       "name": "Hyperliquid",
       "price": 41.83,
       "market_cap": 9980846624,
-      "volume_24h": 252202051,
-      "price_change_1h": -0.16716948568685464,
-      "price_change_24h": 1.9393314656129776,
-      "price_change_7d": -1.7347846159811178,
+      "volume_24h": 251269157,
+      "price_change_1h": -0.17574659323588412,
+      "price_change_24h": 1.9790345602178696,
+      "price_change_7d": -1.9089487274497232,
       "high_24h": 42.51,
       "low_24h": 40.7,
       "ath": 59.3,
-      "ath_change_percentage": -29.46356,
+      "ath_change_percentage": -29.46962,
       "sparkline_7d": [
         40.9295187811176,
         41.01537909352235,
@@ -748,7 +700,7 @@
         42.47611482116435,
         42.10474655887496
       ],
-      "last_updated": "2026-05-04T07:59:43.445Z"
+      "last_updated": "2026-05-04T08:01:47.683Z"
     },
     {
       "id": "leo-token",
@@ -757,13 +709,13 @@
       "price": 10.32,
       "market_cap": 9502996485,
       "volume_24h": 327352,
-      "price_change_1h": -0.0016268261478634323,
-      "price_change_24h": 0.10514278308935344,
-      "price_change_7d": -0.4822890095572109,
+      "price_change_1h": 0.0008321785005242898,
+      "price_change_24h": 0.09513282314307572,
+      "price_change_7d": -0.48015924886143213,
       "high_24h": 10.42,
       "low_24h": 10.19,
       "ath": 10.45,
-      "ath_change_percentage": -1.25,
+      "ath_change_percentage": -1.24764,
       "sparkline_7d": [
         10.308810440658844,
         10.310964554812157,
@@ -790,22 +742,22 @@
         10.318830372119226,
         10.322086710917299
       ],
-      "last_updated": "2026-05-04T07:59:45.512Z"
+      "last_updated": "2026-05-04T08:01:49.361Z"
     },
     {
       "id": "cardano",
       "symbol": "ada",
       "name": "Cardano",
-      "price": 0.251765,
+      "price": 0.251643,
       "market_cap": 9310609219,
-      "volume_24h": 325122797,
-      "price_change_1h": -0.5573287290988191,
-      "price_change_24h": 1.1852188405441955,
-      "price_change_7d": 1.2551766466406795,
+      "volume_24h": 331482724,
+      "price_change_1h": -0.5383192142986678,
+      "price_change_24h": 1.1485324386851623,
+      "price_change_7d": 1.5352581215844274,
       "high_24h": 0.254397,
       "low_24h": 0.24792,
       "ath": 3.09,
-      "ath_change_percentage": -91.8441,
+      "ath_change_percentage": -91.84805,
       "sparkline_7d": [
         0.24853571512425815,
         0.24899421809007447,
@@ -832,22 +784,22 @@
         0.25354184119312206,
         0.2530584013511202
       ],
-      "last_updated": "2026-05-04T07:59:45.876Z"
+      "last_updated": "2026-05-04T08:01:49.663Z"
     },
     {
       "id": "bitcoin-cash",
       "symbol": "bch",
       "name": "Bitcoin Cash",
-      "price": 446.79,
+      "price": 446.63,
       "market_cap": 8949209234,
-      "volume_24h": 128348824,
-      "price_change_1h": 0.18183954892608464,
-      "price_change_24h": 0.7150906286673361,
-      "price_change_7d": -0.4483095763076144,
+      "volume_24h": 135119410,
+      "price_change_1h": 0.13210497515501868,
+      "price_change_24h": 0.6528187540335697,
+      "price_change_7d": -0.2421064985905267,
       "high_24h": 449.79,
       "low_24h": 441.11,
       "ath": 3785.82,
-      "ath_change_percentage": -88.19828,
+      "ath_change_percentage": -88.20261,
       "sparkline_7d": [
         443.57918809604257,
         443.68018252098614,
@@ -874,22 +826,22 @@
         449.49979234174657,
         447.74520749088447
       ],
-      "last_updated": "2026-05-04T07:59:45.579Z"
+      "last_updated": "2026-05-04T08:01:49.461Z"
     },
     {
       "id": "monero",
       "symbol": "xmr",
       "name": "Monero",
-      "price": 401.54,
+      "price": 401.57,
       "market_cap": 7409988860,
-      "volume_24h": 137664239,
-      "price_change_1h": -0.36173589827295277,
-      "price_change_24h": 4.016355893998619,
-      "price_change_7d": 5.078982790327356,
+      "volume_24h": 137678914,
+      "price_change_1h": -0.3667675069905382,
+      "price_change_24h": 3.731220091674592,
+      "price_change_7d": 3.3977858104043226,
       "high_24h": 404.4,
-      "low_24h": 386.03,
+      "low_24h": 387.12,
       "ath": 797.73,
-      "ath_change_percentage": -49.6654,
+      "ath_change_percentage": -49.66136,
       "sparkline_7d": [
         387.5026777451624,
         386.33740678586537,
@@ -916,22 +868,22 @@
         397.4187632878587,
         397.37609695117385
       ],
-      "last_updated": "2026-05-04T07:59:44.808Z"
+      "last_updated": "2026-05-04T08:01:48.715Z"
     },
     {
       "id": "zcash",
       "symbol": "zec",
       "name": "Zcash",
-      "price": 414.28,
+      "price": 414.46,
       "market_cap": 6914437673,
-      "volume_24h": 762267823,
-      "price_change_1h": -0.21099811620631845,
-      "price_change_24h": 7.367121728997541,
-      "price_change_7d": 17.35663392311847,
+      "volume_24h": 705341786,
+      "price_change_1h": -0.1381477715628277,
+      "price_change_24h": 7.465432140375072,
+      "price_change_7d": 16.224774666610603,
       "high_24h": 424.04,
       "low_24h": 384.87,
       "ath": 3191.93,
-      "ath_change_percentage": -87.02091,
+      "ath_change_percentage": -87.01526,
       "sparkline_7d": [
         385.64848449754305,
         385.85696930196076,
@@ -958,7 +910,7 @@
         416.59733575470597,
         414.8734467979185
       ],
-      "last_updated": "2026-05-04T07:59:43.737Z"
+      "last_updated": "2026-05-04T08:01:47.742Z"
     },
     {
       "id": "chainlink",
@@ -966,14 +918,14 @@
       "name": "Chainlink",
       "price": 9.32,
       "market_cap": 6776072651,
-      "volume_24h": 272544298,
-      "price_change_1h": 0.1413302127945139,
-      "price_change_24h": 2.1680326785430846,
-      "price_change_7d": -0.43097525246969154,
+      "volume_24h": 271192369,
+      "price_change_1h": 0.11753979592212152,
+      "price_change_24h": 2.225175111796489,
+      "price_change_7d": -0.19033016687007462,
       "high_24h": 9.38,
       "low_24h": 9.1,
       "ath": 52.7,
-      "ath_change_percentage": -82.31802,
+      "ath_change_percentage": -82.31744,
       "sparkline_7d": [
         9.092203016435256,
         9.113709397162513,
@@ -1000,18 +952,18 @@
         9.364709953641563,
         9.335210983227665
       ],
-      "last_updated": "2026-05-04T07:59:45.736Z"
+      "last_updated": "2026-05-04T08:01:49.542Z"
     },
     {
       "id": "canton-network",
       "symbol": "cc",
       "name": "Canton",
-      "price": 0.148858,
+      "price": 0.148822,
       "market_cap": 5728580730,
-      "volume_24h": 4060719,
-      "price_change_1h": -0.1364130805302471,
-      "price_change_24h": -0.6221328813161107,
-      "price_change_7d": -0.8318310037843489,
+      "volume_24h": 4064807,
+      "price_change_1h": -0.21258383364841912,
+      "price_change_24h": -0.47773750537755705,
+      "price_change_7d": -0.7793127268674681,
       "high_24h": 0.149888,
       "low_24h": 0.147512,
       "ath": 0.194152,
@@ -1042,13 +994,13 @@
         0.14870690435589284,
         0.1490680992441187
       ],
-      "last_updated": "2026-05-04T07:59:45.179Z"
+      "last_updated": "2026-05-04T08:01:48.990Z"
     }
   ],
   "metadata": {
     "total_coins_analyzed": 50,
-    "anomalies_detected": 7,
-    "high_severity": 0,
+    "anomalies_detected": 3,
+    "high_severity": 1,
     "medium_severity": 0
   }
 }

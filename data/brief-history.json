@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-05-04T08:03:06.294Z",
+    "anomalies": 3,
+    "high_severity": 1,
+    "brief_length": 3566
+  },
+  {
     "date": "2026-05-04T08:00:41.760Z",
     "anomalies": 7,
     "high_severity": 0,
