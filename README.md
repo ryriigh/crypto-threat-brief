@@ -45,7 +45,7 @@ GitHub Models (GPT-4o-mini) ──> generate-brief.js
 2. **Enable GitHub Pages**: Settings > Pages > Source: GitHub Actions
 3. **That's it!** The workflow runs automatically. No API keys needed for basic operation.
 
-For AI-enhanced briefs, the workflow automatically uses `GITHUB_TOKEN` with GitHub Models.
+For AI-enhanced briefs, the workflow uses the built-in `GITHUB_TOKEN` with `models: read` permission and the GitHub Models inference endpoint.
 
 ## Local Development
 

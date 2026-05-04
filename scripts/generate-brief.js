@@ -1,8 +1,8 @@
 import { readFile, writeFile, mkdir } from "fs/promises"
 import { existsSync } from "fs"
 
-const GITHUB_MODELS_URL = "https://models.inference.ai.azure.com/chat/completions"
-const MODEL = "gpt-4o-mini" // Free via GitHub Models
+const GITHUB_MODELS_URL = process.env.GITHUB_MODELS_URL || "https://models.github.ai/inference/chat/completions"
+const MODEL = process.env.GITHUB_MODEL || "openai/gpt-4o-mini"
 
 /**
  * Generate AI threat intelligence brief using GitHub Models
@@ -55,6 +55,7 @@ Write the brief now.`
   const response = await fetch(GITHUB_MODELS_URL, {
     method: "POST",
     headers: {
+      "Accept": "application/vnd.github+json",
       "Content-Type": "application/json",
       "Authorization": `Bearer ${token}`
     },
