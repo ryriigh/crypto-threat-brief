@@ -86,9 +86,11 @@ async function fetchGlobalStats() {
  */
 function detectAnomalies(coins) {
   const anomalies = []
+  const stableSymbols = new Set(["usdt", "usdc", "dai", "busd", "tusd", "usdp", "usdd", "usde", "usd1", "usds", "frax", "lusd", "usyc", "buidl"])
 
   for (const coin of coins) {
     const issues = []
+    const isStableAsset = stableSymbols.has(String(coin.symbol).toLowerCase()) || /usd|dollar/i.test(coin.name)
 
     // Extreme price movements (potential manipulation)
     if (Math.abs(coin.price_change_1h || 0) > 10) {
@@ -119,8 +121,20 @@ function detectAnomalies(coins) {
       }
     }
 
-    // Price near ATH (euphoria/FOMO signal)
-    if (coin.ath_change_percentage > -5) {
+    // Stable assets should be watched for peg breaks, not ATH proximity.
+    if (isStableAsset && coin.price != null) {
+      const pegDeviation = Math.abs(coin.price - 1)
+      if (pegDeviation > 0.005) {
+        issues.push({
+          type: "stablecoin_depeg",
+          value: pegDeviation,
+          severity: pegDeviation > 0.02 ? "high" : "medium"
+        })
+      }
+    }
+
+    // Price near ATH (euphoria/FOMO signal) for non-stable assets.
+    if (!isStableAsset && coin.ath_change_percentage > -5) {
       issues.push({
         type: "near_ath",
         value: coin.ath_change_percentage,

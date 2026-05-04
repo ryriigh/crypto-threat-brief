@@ -25,7 +25,8 @@ Rules:
 3. Structure your brief with clear sections: Executive Summary, Market Overview, Threat Signals, Watchlist.
 4. If the data is mostly normal, say so. Do not manufacture drama.
 5. Use markdown formatting. Keep the brief under 1500 words.
-6. Include specific coin names, price changes, and volume figures.`
+6. Include specific coin names, price changes, and volume figures.
+7. Treat anomaly values by type: price moves and ATH proximity are percentages, volume/market-cap is a ratio, and stablecoin depeg is a USD peg deviation. Never format a percentage anomaly as a dollar value.`
 
   const userPrompt = `Generate a weekly Crypto Threat Intelligence Brief based on this market data.
 
@@ -124,6 +125,8 @@ function generateTemplateBrief(data) {
           brief += `${icon} **High volume/mcap ratio**: ${issue.value.toFixed(2)}x (potential wash trading signal)\n`
         } else if (issue.type === "near_ath") {
           brief += `${icon} **Near ATH**: ${issue.value.toFixed(1)}% from all-time high\n`
+        } else if (issue.type === "stablecoin_depeg") {
+          brief += `${icon} **Stablecoin peg deviation**: $${issue.value.toFixed(4)} from $1.00 peg\n`
         }
       }
       brief += `\n`
@@ -191,6 +194,13 @@ function buildHTML(brief, marketData) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CryptoThreatBrief - Weekly Crypto Threat Intelligence</title>
   <meta name="description" content="AI-powered weekly crypto market threat intelligence. Anomaly detection, manipulation signals, and risk analysis.">
+  <meta property="og:title" content="CryptoThreatBrief - Weekly Crypto Threat Intelligence">
+  <meta property="og:description" content="AI-powered crypto market threat intelligence with anomaly detection, manipulation signals, and weekly risk analysis.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ryriigh.github.io/crypto-threat-brief/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CryptoThreatBrief">
+  <meta name="twitter:description" content="Weekly AI-generated crypto market threat intelligence.">
   <style>
     :root {
       --bg: #0a0e17;
