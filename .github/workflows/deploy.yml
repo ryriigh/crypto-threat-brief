@@ -1,4 +1,4 @@
-name: Deploy Product
+name: Deploy CryptoThreatBrief
 
 on:
   push:
@@ -9,58 +9,50 @@ on:
 
 permissions:
   contents: write
-  pages: write  # Optional: Remove if not using GitHub Pages
-  id-token: write  # Optional: Remove if not using GitHub Pages
+  pages: write
+  id-token: write
 
 jobs:
-  update:
+  update-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: Setup Node.js
-        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      - name: Update data
-        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
-        run: node scripts/api-call.js
-        env:
-          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
+      - name: Fetch market data
+        run: node scripts/fetch-market-data.js
 
-      - name: Commit changes
-        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+      - name: Generate AI threat brief
+        run: node scripts/generate-brief.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit data updates
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add data/events.json
+          git add data/ index.html
           if ! git diff --staged --quiet; then
-            if [ "${{ github.event_name }}" = "schedule" ]; then
-              git commit -m "Scheduled update - $(date -u '+%Y-%m-%d %H:%M')"
-            else
-              git commit -m "Manual update - $(date -u '+%Y-%m-%d %H:%M')"
-            fi
+            git commit -m "🌰 Update threat brief - $(date -u '+%Y-%m-%d %H:%M')"
             git push
           fi
 
-      # Optional: Deploy to GitHub Pages (uncomment if building a website)
-      # - name: Setup Pages
-      #   uses: actions/configure-pages@v5
-      # - name: Upload Pages
-      #   uses: actions/upload-pages-artifact@v3
-      #   with:
-      #     path: '.'
-      # - name: Deploy to Pages
-      #   id: deployment
-      #   uses: actions/deploy-pages@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
-      # Optional: Post to Twitter (uncomment if building a social media bot)
-      # Add TWITTER_BEARER_TOKEN to repository secrets
-      # - name: Post to Twitter
-      #   if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
-      #   run: node scripts/post-twitter.js
-      #   env:
-      #     TWITTER_BEARER_TOKEN: ${{ secrets.TWITTER_BEARER_TOKEN }}
+      - name: Upload Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
